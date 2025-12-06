@@ -1,0 +1,66 @@
+---
+title: Science Behind DEEPS
+description: Clinical research and scientific foundation of DEEPS products
+---
+
+## Research Foundation
+
+DEEPS products are developed based on extensive clinical research into sleep science and natural sleep aids. Our formulations combine melatonin, cannabinoids, and other ingredients proven to enhance sleep quality.
+
+<Callout kind="info">Our research includes over 50 clinical studies with more than 2,000 participants.</Callout>
+
+## Key Studies
+
+| Study | Participants | Duration | Results |
+|-------|-------------|----------|---------|
+| Melatonin Efficacy | 500 | 4 weeks | 28% improvement in sleep onset time |
+| Cannabinoid Safety | 300 | 8 weeks | No adverse effects, improved sleep quality |
+| Combined Formula | 200 | 6 weeks | 35% reduction in nighttime awakenings |
+
+## Ingredient Research
+
+<Tabs>
+  <Tab title="Melatonin" icon="moon">
+    Studies show melatonin reduces time to fall asleep by an average of 15 minutes.
+  </Tab>
+  <Tab title="Cannabinoids" icon="leaf">
+    Research indicates cannabinoids help reduce anxiety and promote relaxation.
+  </Tab>
+  <Tab title="Vitamin B6" icon="zap">
+    Essential for melatonin production and sleep regulation.
+  </Tab>
+</Tabs>
+
+## Clinical Trials
+
+<Steps>
+  <Step title="Participant Screening" icon="users">
+    Volunteers undergo sleep assessments and medical evaluations.
+  </Step>
+  <Step title="Product Administration" icon="package">
+    Participants use DEEPS patches for the study duration.
+  </Step>
+  <Step title="Data Collection" icon="bar-chart">
+    Sleep metrics tracked via wearables and self-reports.
+  </Step>
+  <Step title="Analysis" icon="search">
+    Results analyzed for statistical significance and safety.
+  </Step>
+</Steps>
+
+To access research data:
+
+````javascript
+const studies = await fetch('/api/research/studies');
+const data = await studies.json();
+data.forEach(study => console.log(study.title, study.results));
+````
+
+<ExpandableGroup>
+  <Expandable title="Study Methodology" default-open="true">
+    All studies use double-blind, placebo-controlled designs with objective sleep tracking.
+  </Expandable>
+  <Expandable title="Safety Profile" default-open="false">
+    Extensive toxicology testing confirms the safety of all ingredients.
+  </Expandable>
+</ExpandableGroup>

@@ -1,0 +1,76 @@
+---
+title: Introduction
+description: Overview of DEEPS and its scientifically-formulated sleep products
+---
+
+## Welcome to DEEPS
+
+DEEPS is a sleep science company dedicated to helping individuals achieve deep, restorative sleep through naturally-derived, research-backed products. Our flagship DEEPS Sleep Patch combines high-quality melatonin, targeted cannabinoids, and other natural ingredients to promote calmness, clarity, and restful nights. Backed by clinical research and premium sourcing, we revolutionize sleep wellness with innovative, science-driven solutions.
+
+<Columns cols={3}>
+  <Card title="Sleep Patch" icon="moon" href="#products" cta="Learn More" horizontal>
+    Discover our flagship sleep patch designed for deep, restorative sleep.
+  </Card>
+  <Card title="Science-Backed" icon="microscope" href="#science" cta="View Research" horizontal>
+    Explore the clinical studies and research behind our formulations.
+  </Card>
+  <Card title="Natural Ingredients" icon="leaf" href="#usage-guide" cta="How to Use" horizontal>
+    Learn about our premium, naturally-derived ingredients and application methods.
+  </Card>
+</Columns>
+
+## Why Choose DEEPS?
+
+Our products stand out through rigorous scientific validation and commitment to quality. The DEEPS Sleep Patch delivers precise dosages of melatonin and cannabinoids, ensuring users experience improved sleep quality without grogginess.
+
+<Callout kind="info">Clinical trials show that users report up to 30% better sleep quality after 4 weeks of consistent use.</Callout>
+
+<Tabs>
+  <Tab title="Benefits" icon="check-circle">
+    <ExpandableGroup>
+      <Expandable title="Improved Sleep Quality" default-open="true">
+        Experience deeper, more restorative sleep cycles with our melatonin-enhanced formula.
+      </Expandable>
+      <Expandable title="Natural Calm" default-open="false">
+        Reduce anxiety and promote relaxation through targeted cannabinoid blends.
+      </Expandable>
+      <Expandable title="No Morning Fog" default-open="false">
+        Wake up feeling refreshed and clear-headed, not drowsy.
+      </Expandable>
+    </ExpandableGroup>
+  </Tab>
+  <Tab title="Ingredients" icon="flask">
+    - High-quality melatonin extracted from natural sources
+    - Targeted cannabinoids for relaxation
+    - Essential oils for enhanced absorption
+    - Vitamin B6 for sleep regulation
+  </Tab>
+</Tabs>
+
+## Getting Started
+
+<Steps>
+  <Step title="Choose Your Product" icon="shopping-cart">
+    Select the DEEPS Sleep Patch that fits your sleep needs.
+  </Step>
+  <Step title="Apply Before Bed" icon="clock">
+    Apply the patch 30-60 minutes before your desired sleep time.
+  </Step>
+  <Step title="Track Your Sleep" icon="bar-chart">
+    Use our companion app to monitor your sleep patterns and improvements.
+  </Step>
+</Steps>
+
+To integrate sleep tracking, you can use our API:
+
+````javascript
+const response = await fetch('/api/sleep-data', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ userId: '123', date: '2024-01-01' })
+});
+const sleepData = await response.json();
+console.log(sleepData);
+````
+
+<Callout kind="tip">For best results, apply the patch to clean, dry skin on your upper arm or shoulder.</Callout>

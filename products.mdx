@@ -1,0 +1,67 @@
+---
+title: Our Products
+description: Explore DEEPS sleep products and formulations
+---
+
+## DEEPS Sleep Patch Lineup
+
+Our product range includes multiple sleep patches designed for different sleep needs and preferences. Each patch is formulated with clinically-tested ingredients to ensure safety and efficacy.
+
+<Columns cols={2}>
+  <Card title="Standard Sleep Patch" icon="moon" href="#" cta="Buy Now">
+    Our core formula with melatonin and cannabinoids for general sleep improvement.
+  </Card>
+  <Card title="Deep Recovery Patch" icon="shield" href="#" cta="Buy Now">
+    Enhanced formula for those needing extra support during stressful periods.
+  </Card>
+</Columns>
+
+## Product Features
+
+<Tabs>
+  <Tab title="Ingredients" icon="leaf">
+    Each patch contains:
+    - 3mg pharmaceutical-grade melatonin
+    - 5mg broad-spectrum cannabinoids
+    - Essential oils blend for transdermal delivery
+    - Vitamin B6 complex
+  </Tab>
+  <Tab title="Benefits" icon="check-circle">
+    - Faster time to fall asleep
+    - Reduced nighttime awakenings
+    - Improved sleep quality
+    - Morning alertness
+  </Tab>
+</Tabs>
+
+## How to Choose
+
+<Steps>
+  <Step title="Assess Sleep Needs" icon="search">
+    Determine if you need general sleep support or recovery-focused aid.
+  </Step>
+  <Step title="Check Ingredients" icon="flask">
+    Review the formulation to ensure compatibility with your preferences.
+  </Step>
+  <Step title="Start Small" icon="package">
+    Begin with a trial pack to experience the effects.
+  </Step>
+</Steps>
+
+For product customization:
+
+````javascript
+const patchConfig = {
+  type: 'recovery',
+  strength: 'medium',
+  duration: 8
+};
+const order = await api.createOrder(patchConfig);
+console.log('Order created:', order.id);
+````
+
+<Expandable title="Patch Application Tips" default-open="false">
+  Apply to clean, dry skin. Avoid areas with cuts or irritation. Leave on for 8 hours for optimal absorption.
+</Expandable>
+
+<Callout kind="alert">Consult your healthcare provider before use if you have medical conditions or take medications.</Callout>
